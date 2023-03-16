@@ -32,7 +32,7 @@ public class SpringBootDemoHelloworldApplication {
     @GetMapping("/hello")
     public String sayHello(@RequestParam(required = false, name = "who") String who) {
         if (StrUtil.isBlank(who)) {
-            who = "World5";
+            who = "World6";
         }
         return StrUtil.format("Hello, {}!", who);
     }
